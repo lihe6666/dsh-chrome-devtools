@@ -1,0 +1,19 @@
+- insert:
+    - id: chrome-devtools-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: chrome-devtools
+        transport: stdio
+        command: npx
+        args: ['-y', 'chrome-devtools-mcp@latest', '--no-usage-statistics']
+        env:
+          HTTP_PROXY: http://192.168.10.248:7897
+          HTTPS_PROXY: http://192.168.10.248:7897
+          NO_PROXY: localhost,127.0.0.1,::1
+          no_proxy: localhost,127.0.0.1,::1
+          CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS: '1'
+        toolCallTimeoutMs: 180000
+        failOnStartupError: false
+    - id: chrome-devtools-ui
+      name: '@local/chrome-devtools'
+      config: {}

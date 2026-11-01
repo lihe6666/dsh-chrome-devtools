@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chrome DevTools",
+    "description": "Connects the chrome-devtools-mcp server so the agent can control and inspect Chrome, and adds a sidebar panel with usage examples."
+  }
+}

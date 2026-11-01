@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chrome DevTools",
+    "description": "连接 chrome-devtools-mcp 服务器，让智能体控制并检查 Chrome，并添加带使用示例的侧边栏面板。"
+  }
+}
